@@ -6,7 +6,8 @@
 body{
   background-image: url(imagem/download.png);
   background-size: 500px;
-  
+  height: 100vh;
+  width: 100%;
 }
 section{
   display: flex;
@@ -81,5 +82,5 @@ label{
 
 } 
 #Cadastro a{
-  color: #000000;
+  color: #ffffff;
 }
