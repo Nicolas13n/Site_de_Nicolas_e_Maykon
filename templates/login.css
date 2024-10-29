@@ -4,21 +4,24 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(/imagem/download.png);
+  background-image: url(imagem/download.png);
   background-size: 500px;
+  
+}
+section{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100%;
 }
-
 #fundo{
   height: 400px;
   width: 400px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   border: 1px solid black;
   border-radius: 15px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.301);
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,10 +42,17 @@ h1{
   border: none;
   outline: none;
   border-radius: 10px;
-  color: #fff;
-  border: 2px solid black;
-  margin: 0 0 20px;
+  color: #000000;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 35px;
   background: rgba(255,255,255,0.1);
+}
+
+
+@keyframes borda {
+0%{border: solid 2px red;}
+100%{border: solid 2px blue;}
 }
 .botao .logar{
   height: 45px;
@@ -52,18 +62,24 @@ h1{
   font-size: 20px;
   background-color: white;
   color: black;
-  font-style: italic;
-  font-weight: bold;
-  opacity: 80%;
   margin-bottom: 20px;
+  cursor: pointer;
+  animation-name: borda;
+  animation-duration: 1s;
+  animation-delay: 1ms;
+  animation-iteration-count: infinite;
+ 
 }
+
+
+
+
 
 label{
   font-size: 18px;
-}
-.box {
-  margin-right: 80px;
-}
-#Cadastro{
-  margin-right: 60px;
+  color: white;
+
+} 
+#Cadastro a{
+  color: #000000;
 }
