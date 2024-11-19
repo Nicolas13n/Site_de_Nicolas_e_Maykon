@@ -56,7 +56,7 @@ article main {
     
 }
 
-article main .livros{
+article main #livros{
     height: 350px;
     width: 350px;
     border: 1px solid black ;
